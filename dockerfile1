@@ -1,0 +1,6 @@
+FROM openjdk:17-jdk-slim
+WORKDIR /nkn
+COPY HelloWorld.java /nkn
+RUN javac HelloWorld.java
+CMD ["java", "HelloWorld"]
+
